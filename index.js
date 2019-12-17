@@ -193,7 +193,7 @@ function getCarInfoById(inventory, id) {
 */
 function sortCarInventory(inventory) {
   /* code here */
-  return 
+  return inventory.sort((a, b) => ((a.car_model > b.car_model) ? 1 : (a.car_model < b.car_model) ? -1 : 0))
 }
 
 /**
